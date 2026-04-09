@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Candles | Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="logo"><a href="index.html">House of Candles</a></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html"
+                            >Cart (<span id="cart-count">0</span>)</a
+                        >
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+    <main>
+        <section id="cart">
+            <h2 class="reveal">Your Cart.</h2>
+            
+            <div id="cart-items-container" class="reveal" style="max-width: 700px; margin: 0 auto; text-align: left; margin-bottom: 40px;"></div>
+            
+            <h3 class="reveal" style="margin-bottom: 20px;">Checkout</h3>
+            
+            <form id="checkout-form" class="reveal" action="https://api.sheetmonkey.io/form/whpe5eGeNkw23Te9WpBSt3" method="POST">
+                <input type="text" name="Customer_Name" placeholder="Full Name" required>
+                <input type="email" name="Customer_Email" placeholder="Email Address" required>
+                <textarea name="Shipping_Address" rows="3" placeholder="Full Shipping Address" required></textarea>
+                
+                <input type="hidden" name="Order_Summary" id="order-summary-input">
+                <input type="hidden" name="Total_Price" id="order-total-input">
+                <input type="hidden" name="Order_Date" value="x-sheetmonkey-current-date-time" />
+                
+                <button type="submit" class="btn" id="checkout-btn">Place Order</button>
+            </form>
+            
+            <div class="success-message reveal" style="max-width: 600px; margin: 0 auto;">
+                <h3>Order Confirmed!</h3>
+                <p>Thank you for shopping with House of Candles. We will send you payment link shortly.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 House of Candles. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
