@@ -259,6 +259,10 @@ footer {
         font-size: 1.1rem;
         font-weight: 600;
     }
+
+    .about-image {
+        height: 250px;
+    }
 }
 
 .reveal {
@@ -275,7 +279,6 @@ footer {
     transform: translateY(0);
 }
 
-/* --- Images --- */
 .hero-image {
     width: 100%;
     max-width: 800px;
@@ -301,7 +304,6 @@ footer {
     border-radius: 20px;
     margin-top: 40px;
 }
-
 
 #toast-container {
     position: fixed;
@@ -334,7 +336,6 @@ footer {
 @keyframes fadeOut {
     to { opacity: 0; transform: translateY(10px); }
 }
-
 
 .cart-item {
     display: flex;
@@ -412,7 +413,6 @@ footer {
 .remove-btn:hover {
     background: rgba(255, 59, 48, 0.1);
 }
-
 
 .success-message {
     background-color: #e4f8f0;
